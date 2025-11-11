@@ -1,0 +1,59 @@
+<!DOCTYPE html
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- changed title to make it Pokemon like phrase -->
+    <title>Catch Them Insects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="screen">
+        <!-- changed H1 -->
+        <h1>Catch Them Insects!</h1>
+        <!-- changed button title -->
+        <button class ="but" id="start-but">Play Now</button>
+    </div>
+
+    <div class="screen">
+        <h1>Choose Your Insect!!</h1>
+        <!--what 'ul' mean? -->
+        <ul class>"insects-list">
+            <li>
+                <button class="insect-but">
+                    <!-- chose diff insect -->
+                    <img src="https://png.pngtree.com/png-vector/20251030/ourlarge/pngtree-spotted-lanternfly-insect-png-image_17867407.webp" alt="spotted-lanternfly">
+                    <p>Spotted Lanternfly</p>
+                </button>
+            </li>
+
+            <li>
+                <button class="insect-but">
+                    <!-- chose diff insect -->
+                    <img src="https://p7.hiclipart.com/preview/166/545/171/insect-brown-marmorated-stink-bug-true-bugs-bugs-transparent-background.jpg" alt="stink-bug">
+                    <p>Stink Bug</p>
+                </button>
+            </li>
+
+            <li>
+                <button class="insect-but">
+                    <!-- chose diff insect -->
+                    <img src="https://image.similarpng.com/file/similarpng/very-thumbnail/2020/09/Black-spider-on-transparent-background-PNG.png" alt="spider">
+                    <p>Spider</p>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="screen game-container" alt="game-container">
+        <h3 id="time" class="time">Time: 00:00</h3>
+        <h3 id="score" class="score">Score: 0</h3>
+        <h5 class="message" id="message">
+            How many did you catch? <br>
+            You still have a chance!
+        </h5>
+    </div>
+</body>
+</html>
