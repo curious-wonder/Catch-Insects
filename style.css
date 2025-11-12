@@ -4,12 +4,17 @@
 
 body {
     /* from your turtorial from Speaking Number Game turtorial */
-    background-color: #f0f8ff url('Img/ground.jpeg') no-repeat center center fixed;
+    background-color: #f0f8ff;
+    /*  how come the background image is not showing up? why are the other insects now showing up? - lines 9 to 12 + 17 */
+    background-image: url(Img/ground.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     /* font color - changed to brown */
-    color: rgb(91, 75, 61);
+    /* color: rgb(91, 75, 61); */
     /* changed font style */
     font-family: 'Press Start 2P', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    height: 100vh;
+    min-height: 100vh; 
     overflow: hidden;
     margin: 0;
     text-align: center;
@@ -77,7 +82,8 @@ h1 {
     margin: 10px;
     /* stuff below not in turtorial */
     cursor: pointer;
-    transition: transform 0.3s;
+    /* changed transition speed */
+    transition: transform 0.4s;
 }
 
 .choose-insect-but {
@@ -91,7 +97,7 @@ h1 {
 }
 
 .choose-insect-but:hover {
-    background-color: white;
+    background-color: rgba(223, 249, 253, 0.906);
     /* changed color */
     color: rgb(235, 223, 223);
 }
