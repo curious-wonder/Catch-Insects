@@ -4,7 +4,7 @@
 
 body {
     /* from your turtorial from Speaking Number Game turtorial */
-    background-color: #f0f8ff;
+    background-color: #ffffff;
     /*  AI (GPT-4.1): promtped with "how come the background image is not showing up?" - make image show up - lines 9 to 12 + 17 */
     background-image: url(Img/ground.jpeg);
     background-size: cover;
@@ -20,14 +20,17 @@ body {
     text-align: center;
 }
 
+/* play button */
 .but {
     /* the boarder was all white and realized that the 'a' was not supposed to be there */
     border: 0;
     background-color: #f0f8ff;
-    color: rgb(145, 129, 115);
+    /* changed font color */
+    color: rgb(244, 152, 73);
     /* turtorial -> 15px 20px */
-    padding: 10px 24px; /* VSC generated */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* changed font style */
+    padding: 15px 24px; /* VSC generated */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;/* changed font style */
+    font-size: 30px; /* added this feature to adjust size */
     cursor: pointer;
 }
 
@@ -87,23 +90,6 @@ h1 {
 }
 
 /* why are the other insects now showing up? */
-
-/* AI (GPT-4.1): promtped with "why are the insects not showing up?" - lines  91 to 103 */
-.insect-but img {
-    width: 120px;
-    height: auto;
-    display: block;
-    object-fit: contain;
-}
-
-.insect-but {
-    /* forgot to add semi-colon after flex and had entire section as an error */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; 
-}
-
 .choose-insect-but {
     background-color: rosybrown;
     border: 2px solid #fff;
